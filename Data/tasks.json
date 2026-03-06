@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1, "Title": "Loenda paarisarvud", "Topic": "loops", "Difficulty": 1,
+    "Task": "Kirjuta programm, mis väljastab kõik paarisarvud vahemikus 1..100.",
+    "Hint": "Kasuta for-tsüklit ja kontrolli n % 2 == 0.", "OutputExample": "2 4 6 ... 100",
+    "EstimatedTimeMin": 10, "Author": "Mari Maasikas"
+  },
+  {
+    "Id": 2, "Title": "Funktsioon ruudu jaoks", "Topic": "functions", "Difficulty": 1,
+    "Task": "Kirjuta funktsioon, mis võtab argumendiks arvu ja tagastab selle ruudu.",
+    "Hint": "Tagastus: x * x.", "OutputExample": "Input: 5 -> Output: 25",
+    "EstimatedTimeMin": 8, "Author": "Jaan Juurikas"
+  },
+  {
+    "Id": 3, "Title": "Sõnade loendamine", "Topic": "strings", "Difficulty": 2,
+    "Task": "Loe kasutajalt lause ja väljasta, mitu sõna selles on.",
+    "Hint": "Split tühiku järgi ja loenda elemendid.", "OutputExample": "Tere tulemast tundi -> 3",
+    "EstimatedTimeMin": 10, "Author": "Kati Kask"
+  },
+  {
+    "Id": 4, "Title": "Leia error read failist", "Topic": "files", "Difficulty": 3,
+    "Task": "Loe failist read ja väljasta ainult need, mis sisaldavad sõna 'error'.",
+    "Hint": "Get-Content | Where-Object { $_ -match 'error' }", "OutputExample": "error: failed to connect",
+    "EstimatedTimeMin": 15, "Author": "Peeter Pärn"
+  },
+  {
+    "Id": 5, "Title": "Lihtne klass Student", "Topic": "OOP", "Difficulty": 3,
+    "Task": "Loo klass Student omadustega Name ja Age ning meetod Describe().",
+    "Hint": "Describe tagastab stringi: 'Student: Name, Age'.", "OutputExample": "Student: Marko, 17",
+    "EstimatedTimeMin": 20, "Author": "Laura Lepp"
+  },
+  {
+    "Id": 6, "Title": "Massiivi keskmine", "Topic": "arrays", "Difficulty": 1,
+    "Task": "Arvuta arvude massiivi keskmine väärtus.",
+    "Hint": "Measure-Object -Average", "OutputExample": "1,2,3 -> Average: 2",
+    "EstimatedTimeMin": 5, "Author": "Marek Mets"
+  },
+  {
+    "Id": 7, "Title": "Loo PSCustomObject", "Topic": "objects", "Difficulty": 2,
+    "Task": "Loo objekt, mis esindab autot (Mark, Mudel, Aasta).",
+    "Hint": "[PSCustomObject]@{...}", "OutputExample": "Make: Toyota, Model: Avensis",
+    "EstimatedTimeMin": 5, "Author": "Siim Sild"
+  },
+  {
+    "Id": 8, "Title": "Failide nimekirja filtreerimine", "Topic": "files", "Difficulty": 2,
+    "Task": "Leia kõik .log failid kindlas kaustas, mis on suuremad kui 1MB.",
+    "Hint": "Get-ChildItem ja Length omadus.", "OutputExample": "install.log (1.2MB)",
+    "EstimatedTimeMin": 12, "Author": "Kaire Kask"
+  },
+  {
+    "Id": 9, "Title": "Sõne tagurpidi", "Topic": "strings", "Difficulty": 2,
+    "Task": "Pööra sisestatud sõna tagurpidi.",
+    "Hint": "[char[]]$s; [array]::Reverse($s)", "OutputExample": "PowerShell -> llehSrewoP",
+    "EstimatedTimeMin": 10, "Author": "Jaan Juurikas"
+  },
+  {
+    "Id": 10, "Title": "While-tsükkel arvamiseks", "Topic": "loops", "Difficulty": 3,
+    "Task": "Loo mäng, kus kasutaja peab arvama juhusliku arvu 1-10.",
+    "Hint": "Kasuta Get-Random ja Read-Host.", "OutputExample": "Liiga madal! Proovi uuesti.",
+    "EstimatedTimeMin": 20, "Author": "Mari Maasikas"
+  },
+  {
+    "Id": 11, "Title": "Objektide sordiimine", "Topic": "objects", "Difficulty": 2,
+    "Task": "Sorteeri protsesside nimekiri mälukasutuse järgi kahanevalt.",
+    "Hint": "Get-Process | Sort-Object WorkingSet64 -Descending", "OutputExample": "chrome.exe 500MB...",
+    "EstimatedTimeMin": 8, "Author": "Peeter Pärn"
+  },
+  {
+    "Id": 12, "Title": "Parameetritega funktsioon", "Topic": "functions", "Difficulty": 2,
+    "Task": "Loo funktsioon Tervitus, mis võtab nime ja tervitab seda isikut.",
+    "Hint": "param($Name)", "OutputExample": "Tere, Mari!",
+    "EstimatedTimeMin": 5, "Author": "Laura Lepp"
+  },
+  {
+    "Id": 13, "Title": "Massiivi unikaalsed väärtused", "Topic": "arrays", "Difficulty": 2,
+    "Task": "Eemalda massiivist duplikaadid.",
+    "Hint": "Select-Object -Unique", "OutputExample": "1,2,2,3 -> 1,2,3",
+    "EstimatedTimeMin": 7, "Author": "Marek Mets"
+  },
+  {
+    "Id": 14, "Title": "Faili sisu muutmine", "Topic": "files", "Difficulty": 4,
+    "Task": "Asenda failis kõik sõnad 'Vana' sõnaga 'Uus'.",
+    "Hint": "(Get-Content fail) -replace 'Vana','Uus' | Set-Content fail", "OutputExample": "Muudatused salvestatud.",
+    "EstimatedTimeMin": 15, "Author": "Siim Sild"
+  },
+  {
+    "Id": 15, "Title": "Klassi pärilus", "Topic": "OOP", "Difficulty": 5,
+    "Task": "Loo klass Animal ja sellest pärinev klass Dog.",
+    "Hint": "class Dog : Animal { ... }", "OutputExample": "Dog barks!",
+    "EstimatedTimeMin": 30, "Author": "Kaire Kask"
+  },
+  {
+    "Id": 16, "Title": "JSON-i lugemine ja muutmine", "Topic": "objects", "Difficulty": 3,
+    "Task": "Loe JSON fail, muuda ühte väärtust ja salvesta tagasi.",
+    "Hint": "ConvertFrom-Json ja ConvertTo-Json", "OutputExample": "Settings updated.",
+    "EstimatedTimeMin": 20, "Author": "Jaan Juurikas"
+  },
+  {
+    "Id": 17, "Title": "Do-Until tsükkel", "Topic": "loops", "Difficulty": 2,
+    "Task": "Küsi kasutajalt sisendit kuni ta kirjutab 'exit'.",
+    "Hint": "do { ... } until ($input -eq 'exit')", "OutputExample": "Sisesta käsk: exit -> Program stopped.",
+    "EstimatedTimeMin": 10, "Author": "Mari Maasikas"
+  },
+  {
+    "Id": 18, "Title": "Regulaaravaldisega valideerimine", "Topic": "strings", "Difficulty": 4,
+    "Task": "Kontrolli, kas sisestatud string on korrektne e-posti aadress.",
+    "Hint": "$email -match '^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$'", "OutputExample": "True / False",
+    "EstimatedTimeMin": 15, "Author": "Kati Kask"
+  },
+  {
+    "Id": 19, "Title": "Dünaamiline massiiv", "Topic": "arrays", "Difficulty": 3,
+    "Task": "Lisa massiivi elemente dünaamiliselt (System.Collections.ArrayList).",
+    "Hint": "[System.Collections.ArrayList]$list = @()", "OutputExample": "List count: 5",
+    "EstimatedTimeMin": 12, "Author": "Marek Mets"
+  },
+  {
+    "Id": 20, "Title": "Vigade käsitlemine", "Topic": "functions", "Difficulty": 3,
+    "Task": "Kirjuta funktsioon, mis kasutab Try-Catch plokki faili lugemisel.",
+    "Hint": "try { Get-Content ... } catch { ... }", "OutputExample": "Error: File not found.",
+    "EstimatedTimeMin": 15, "Author": "Peeter Pärn"
+  },
+  {
+    "Id": 21, "Title": "Objektide filtreerimine", "Topic": "objects", "Difficulty": 1,
+    "Task": "Filtreeri välja teenused (Services), mis on 'Running' olekus.",
+    "Hint": "Get-Service | Where-Object Status -eq 'Running'", "OutputExample": "WinRM Running...",
+    "EstimatedTimeMin": 5, "Author": "Laura Lepp"
+  },
+  {
+    "Id": 22, "Title": "Failiõiguste kontroll", "Topic": "files", "Difficulty": 5,
+    "Task": "Väljasta faili ACL (Access Control List) omanik.",
+    "Hint": "(Get-Acl path).Owner", "OutputExample": "NT AUTHORITY\\SYSTEM",
+    "EstimatedTimeMin": 20, "Author": "Siim Sild"
+  },
+  {
+    "Id": 23, "Title": "Switch lause", "Topic": "loops", "Difficulty": 2,
+    "Task": "Kasuta Switch-lauset, et hinnata hindeid (A, B, C...).",
+    "Hint": "switch ($grade) { 'A' { 'Suurepärane' } }", "OutputExample": "A -> Suurepärane",
+    "EstimatedTimeMin": 10, "Author": "Kaire Kask"
+  },
+  {
+    "Id": 24, "Title": "Sõne asendamine", "Topic": "strings", "Difficulty": 1,
+    "Task": "Eemalda stringist kõik tühikud.",
+    "Hint": ".Replace(' ', '')", "OutputExample": "A B C -> ABC",
+    "EstimatedTimeMin": 5, "Author": "Kati Kask"
+  },
+  {
+    "Id": 25, "Title": "Staatilised meetodid", "Topic": "OOP", "Difficulty": 4,
+    "Task": "Loo klass MathHelper staatilise meetodiga Square(int).",
+    "Hint": "static [int] Square([int]$n) { ... }", "OutputExample": "[MathHelper]::Square(4) -> 16",
+    "EstimatedTimeMin": 15, "Author": "Jaan Juurikas"
+  },
+  {
+    "Id": 26, "Title": "Massiivi sordiimine", "Topic": "arrays", "Difficulty": 1,
+    "Task": "Sorteeri nimede massiiv tähestikulises järjekorras.",
+    "Hint": "$names | Sort-Object", "OutputExample": "B, A, C -> A, B, C",
+    "EstimatedTimeMin": 5, "Author": "Marek Mets"
+  },
+  {
+    "Id": 27, "Title": "Rekursiivne funktsioon", "Topic": "functions", "Difficulty": 5,
+    "Task": "Arvuta arvujada faktoriaal kasutades rekursiooni.",
+    "Hint": "if ($n -le 1) { 1 } else { $n * Fact($n-1) }", "OutputExample": "Fact(5) -> 120",
+    "EstimatedTimeMin": 25, "Author": "Peeter Pärn"
+  },
+  {
+    "Id": 28, "Title": "XML lugemine", "Topic": "files", "Difficulty": 4,
+    "Task": "Loe andmed XML failist ja väljasta konkreetne atribuut.",
+    "Hint": "[xml]$data = Get-Content fail.xml", "OutputExample": "Node value: Test",
+    "EstimatedTimeMin": 20, "Author": "Laura Lepp"
+  },
+  {
+    "Id": 29, "Title": "Hash-tabeli loomine", "Topic": "objects", "Difficulty": 2,
+    "Task": "Loo hash-tabel ja lisa sinna võti-väärtus paarid.",
+    "Hint": "$h = @{ ID = 1; Name = 'Test' }", "OutputExample": "Name: Test",
+    "EstimatedTimeMin": 7, "Author": "Siim Sild"
+  },
+  {
+    "Id": 30, "Title": "Foreach-Object paralleelselt", "Topic": "loops", "Difficulty": 5,
+    "Task": "Kasuta PS7 Parallel funktsionaalsust, et pingida mitut aadressi.",
+    "Hint": "$ips | ForEach-Object -Parallel { Test-Connection $_ }", "OutputExample": "Pinging 8.8.8.8...",
+    "EstimatedTimeMin": 15, "Author": "Marek Mets"
+  }
+]
